@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/logo_mark1" android:duration="200" />
+    <item android:drawable="@drawable/logo_mark2" android:duration="180" />
+    <item android:drawable="@drawable/logo_mark3" android:duration="160" />
+    <item android:drawable="@drawable/logo_mark4" android:duration="140" />
+    <item android:drawable="@drawable/logo_mark5" android:duration="120" />
+    <item android:drawable="@drawable/logo_mark6" android:duration="100" />
+    <item android:drawable="@drawable/logo_mark7" android:duration="80" />
+    <item android:drawable="@drawable/logo_mark8" android:duration="60" />
+    <item android:drawable="@drawable/logo_mark9" android:duration="40" />
+    <item android:drawable="@drawable/logo_mark10" android:duration="20" />
+    <item android:drawable="@drawable/logo_mark11" android:duration="10" />
+</animation-list>

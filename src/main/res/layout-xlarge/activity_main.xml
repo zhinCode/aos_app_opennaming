@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:padding="0dp">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom|left|right|top"
+            android:id="@+id/layout_Splash"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView_Splash"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitXY"
+                android:background="#ffffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_dummy"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_LogoText"
+                android:src="@drawable/intro_logo1"
+                android:layout_marginTop="107dp"
+                android:layout_below="@+id/imageView_dummy"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/intro_copyright"
+                android:layout_below="@+id/imageView_LogoText"
+                android:layout_alignLeft="@+id/imageView_LogoText"
+                android:layout_alignStart="@+id/imageView_LogoText" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_Logo"
+                android:layout_marginBottom="9dp"
+                android:layout_above="@+id/imageView_dummy"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layout_Main"
+            android:visibility="invisible">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView_Main"
+                android:layout_gravity="center_horizontal"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
